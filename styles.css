@@ -118,7 +118,7 @@ header aside ul .active a {
 header aside .subscriptions {
     inline-size: 99%;
     block-size: auto;
-    border: 1px solid #FFF;
+    /* border: 1px solid #FFF; */
     margin-block-start: 15px;
     margin-inline-start: 12%;
 }
@@ -130,11 +130,32 @@ header aside .subscriptions h5 {
 header aside .subscriptions .cards {
     inline-size: 88%;
     block-size: 305px;
-    border: 1px solid #FFF;
+    /* border: 1px solid #FFF; */
+    overflow-x: auto;
+    margin-block-start: 15px;
+}
+header aside .subscriptions .cards::-webkit-scrollbar {
+    inline-size: 4px;
+    background: rgba(184,184,184,.2);
+    border-radius: 20px;
+    visibility: hidden;
+    transition: .3s linear;
+}
+header aside .subscriptions .cards::-webkit-scrollbar-thumb {
+    background: rgba(184,184,184,.7);
+    border-radius: 20px;
+    visibility: hidden;
+    transition: .3s linear;
+}
+header aside .subscriptions .cards:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
+}
+header aside .subscriptions .cards::-webkit-scrollbar {
+    visibility: visible;
 }
 header aside .subscriptions .cards .card {
     margin-block-end: 10px;
-    border: 1px solid #FFF;
+    /* border: 1px solid #FFF; */
     display: flex;
     align-items: center;
 }
@@ -161,4 +182,21 @@ header aside .subscriptions .cards .card .img img {
 }
 header aside .subscriptions .cards .card .content {
     margin-inline-start: 8px;
+}
+header aside .subscriptions .cards .card .content h6 {
+    inline-size: 100px;
+    color: #FFF;
+    font-size: 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+header aside .subscriptions .cards .card .content h6 p {
+    inline-size: 100px;
+    color: rgb(225,255,255,.5);
+    font-size: 8px;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
