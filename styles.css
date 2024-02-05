@@ -204,7 +204,7 @@ header aside .subscriptions .cards .card .content h6 p {
 header article nav {
     inline-size: 100%;
     block-size: 9%;
-    border: 1px solid #FFF;
+    /* border: 1px solid #FFF; */
     border-radius: 0px 10px 0px 0px;
     padding: 0px 30px;
     display: flex;
@@ -250,7 +250,7 @@ header article nav .search i {
 }
 header article nav .right_bx {
     inline-size: 38%;
-    border: 1px solid #FFF;
+    /* border: 1px solid #FFF; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -273,4 +273,112 @@ header article nav .right_bx button {
     font-size: 12px;
     color: var(--secondary-color);
     transition: .5s linear;
+}
+header article nav .right_bx button span {
+    margin: -2px 0px 0px 10px;
+}
+/* battery active */
+header article nav .right_bx .active_battery {
+    background: #663DA6;
+    box-shadow: 0px 0px 20px #663DA6;
+}
+header article nav .right_bx .user_data {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: .5s linear;
+}
+header article nav .right_bx .user_data h6 {
+    inline-size: 70px;
+    color: var(--color-4);
+    font-weight: 600;
+    font-size: 9px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: .5s linear;
+}
+header article nav .right_bx .user_data h5 {
+    color: var(--secondary-color);
+    background: #663DA6;
+    border-radius: 50%;
+    padding: 8px 9px;
+    font-size: 11px;
+    margin: 0px 5px;
+    transition: .5s linear;
+}
+header article nav .right_bx .user_data i {
+    color: var(--secondary-color);
+    font-size: 12px;
+    transition: .7s linear;
+}
+header article nav .right_bx .user_data:hover i {
+    transform: rotate(180deg);
+}
+header article nav .right_bx .user_data .card {
+    position: absolute;
+    inline-size: 130px;
+    block-size: 0px;
+    /* border: 1px solid #FFF; */
+    inset-block-start: 50px;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    opacity: 0;
+    transition: 1s linear;
+}
+header article nav .right_bx .user_data:hover .card {
+    block-size: 200px;
+    opacity: 1;
+    overflow: unset;
+}
+header article nav .right_bx .user_data .card::before {
+    content: '';
+    position: absolute;
+    inline-size: 100%;
+    block-size: 100%;
+    background: rgb(184,184,184,.1);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    z-index: -1;
+}
+header article nav .right_bx .user_data .card::after {
+    content: '';
+    position: absolute;
+    border-block-start: 15px solid rgb(184,184,184,.1);
+    border-inline-end: 15px solid transparent;
+    border-block-end: 15px solid transparent;
+    inset-block-start: -10px;
+    inset-inline-end: 20px;
+    transform: rotate(45deg);
+}
+header article nav .right_bx .user_data .card img {
+    inline-size: 35px;
+    block-size: 35px;
+    border-radius: 50%;
+    margin-block-start: 10px;
+}
+header article nav .right_bx .user_data .card h6 {
+    inline-size: unset;
+    overflow: unset;
+    text-align: center;
+    display: block;
+    margin-block-start: 10px;
+    color: var(--secondary-color);
+    transition: .5s linear;
+}
+header article nav .right_bx .user_data .card p {
+    color: rgb(225,255,255,.5);
+    font-size: 9px;
+    margin-block-end: 10px;
+    transition: .5s linear;
+}
+header article nav .right_bx .user_data .card .gta_img {
+    inline-size: 110px;
+    block-size: 60px;
+    border-radius: 15px;
+    margin: 15px;
 }
