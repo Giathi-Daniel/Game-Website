@@ -129,7 +129,7 @@ header aside .subscriptions h5 {
 }
 header aside .subscriptions .cards {
     inline-size: 88%;
-    block-size: 305px;
+    block-size: 210px;
     /* border: 1px solid #FFF; */
     overflow-x: auto;
     margin-block-start: 15px;
