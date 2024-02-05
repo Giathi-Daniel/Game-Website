@@ -382,3 +382,12 @@ header article nav .right_bx .user_data .card .gta_img {
     border-radius: 15px;
     margin: 15px;
 }
+/* === Game Box === */
+header article .game1 {
+    position: relative;
+    inline-size: 100%;
+    block-size: 200px;
+    border: 1px solid #FFF;
+    padding: 0px 30px;
+    margin-block-start: 20px;
+}
