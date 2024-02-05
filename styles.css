@@ -486,7 +486,7 @@ header article .game2 {
     position: relative;
     inline-size: 100%;
     block-size: 300px;
-    border: 1px solid #FFF;
+    /* border: 1px solid #FFF; */
     padding: 0px 30px;
     overflow: hidden;
 }
@@ -500,7 +500,7 @@ header article .game2 .games_bx {
     inline-size: 100%;
     block-size: 350px;
     margin-block-start: 8px;
-    border: 1px solid #FFF;
+    /* border: 1px solid #FFF; */
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -526,6 +526,34 @@ header article .game2 .games_bx:hover::-webkit-scrollbar-thumb {
 header article .game2 .games_bx .card {
     inline-size: 100px;
     block-size: 170px;
-    border: 1px solid #FFF;
+    /* border: 1px solid #FFF; */
     margin: 0px 5px 11px 0px;
+}
+header article .game2 .games_bx .card img {
+    inline-size: 100%;
+    block-size: 80%;
+    border-radius: 10px;
+}
+header article .game2 .games_bx .card .content {
+    inline-size: 100%;
+    block-size: 20%;
+    overflow: hidden;
+}
+header article .game2 .games_bx .card .content h6 {
+    inline-size: 100%;
+    color: var(--secondary-color);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: .5s linear;
+}
+header article .game2 .games_bx .card .content p {
+    inline-size: 100%;
+    font-size: 9px;
+    font-weight: 500s;
+    color: var(--secondary-color);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: .5s linear;
 }
