@@ -388,7 +388,7 @@ header article .game1 {
     position: relative;
     inline-size: 100%;
     block-size: 200px;
-    border: 1px solid #FFF;
+    /* border: 1px solid #FFF; */
     padding: 0px 30px;
     margin-block-start: 20px;
 }
@@ -397,4 +397,87 @@ header article .game1 h3 {
     font-size: 14px;
     font-weight: 600;
     transition: .5s linear;
+}
+header article .game1 .game_bx {
+    inline-size: 100%;
+    block-size: 175px;
+    /* border: 1px solid #FFF; */
+    display: flex;
+    align-items: center;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+header article .game1 .game_bx::-webkit-scrollbar {
+    display: none;
+}
+header article .game1 .game_bx .card {
+    min-inline-size: 230px;
+    block-size: 160px;
+    /* border: 1px solid #FFF; */
+    border-radius: 10px;
+    margin-block-start: 10px;
+    margin-inline-end: 20px;
+}
+/* header article .game1 .game_bx .card:nth-child(1) {
+    margin-inline-end: 0px;
+} */
+header article .game1 .game_bx .card img {
+    inline-size: 100%;
+    block-size: 75%;
+    border-radius: 5px;
+}
+header article .game1 .game_bx .card .content {
+    inline-size: 100%;
+    block-size: 25%;
+    /* border: 1px solid #FFF; */
+    display: flex;
+    justify-content: space-between;
+    color: var(--secondary-color);
+    margin-block-start: -5px;
+    transition: .5s linear;
+}
+header article .game1 .game_bx .card .content .left {
+    color: var(--secondary-color);
+    transition: .5s linear;
+}
+header article .game1 .game_bx .card .content .left h5 {
+    font-size: 12px;
+    font-weight: 500;
+    inline-size: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+header article .game1 .game_bx .card .content .left p {
+    font-size: 8px;
+    font-weight: 500;
+    inline-size: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: var(--color-4);
+}
+header article .game1 .game_bx .card .content h6 {
+    font-size: 10px;
+    font-weight: 500;
+    color: var(--color-4);
+    margin-block-start: 5px;
+    transition: .5s linear;
+}
+header article .game1 .btns {
+    position: absolute;
+    inset-inline-end: 3%;
+    inset-block-start: 0;
+    display: flex;
+    align-items: center;
+    color: var(--color-4);
+    transition: .5s linear;
+}
+header article .game1 .btns i {
+    margin-inline-start: 5px;
+    cursor: pointer;
+    transition: .5s linear;
+}
+header article .game1 .btns i:hover {
+    columns: var(--secondary-color);
 }
