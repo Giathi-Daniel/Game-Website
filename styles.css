@@ -591,7 +591,7 @@ header article .download_container .download_bx .img_video h6 {
     inline-size: 100%;
     block-size: 100%;
     border-radius: 20px;
-    background: url("images/pubg.jpeg") no-repeat center center/cover;
+    background: url('images/pubg.jpeg') no-repeat center center/cover;
     transition: 1s linear;
 }
 header article .download_container .download_bx .img_video video {
@@ -601,6 +601,7 @@ header article .download_container .download_bx .img_video video {
     inline-size: 100%;
     block-size: 100%;
     border-radius: 20px;
+    display: none;
 }
 header article .download_container .download_bx h4 {
     margin-block-start: 10px;
@@ -723,13 +724,11 @@ header article .download_container .realted_bx .join_new {
     /* border: 1px solid #FFF; */
     margin-block-start: 30px;
     overflow: auto;
+    scroll-behavior: smooth;
 }
 header article .download_container .realted_bx .join_new::-webkit-scrollbar {
     display: none;
 }
-/* header article .download_container .realted_bx .join_new::-webkit-scrollbar-thumb {
-
-} */
 header article .download_container .realted_bx .join_new .card {
     inline-size: 100%;
     block-size: 50px;
