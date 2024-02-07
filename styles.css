@@ -603,7 +603,7 @@ header article .download_container .download_bx .img_video video {
     border-radius: 20px;
 }
 header article .download_container .download_bx h4 {
-    margin-block-start: 30px;
+    margin-block-start: 10px;
     color: var(--secondary-color);
     font-size: 16px;
     font-weight: 500;
@@ -614,7 +614,7 @@ header article .download_container .download_bx ul {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-block-start: 20px;
+    margin-block-start: 10px;
 }
 header article .download_container .download_bx ul li {
     inline-size: 50%;
@@ -629,4 +629,29 @@ header article .download_container .download_bx ul li:nth-child(2n) {
 }
 header article .download_container .download_bx ul li i {
     padding-inline-end: 5px;
+}
+header article .download_container .download_bx .btns {
+    display: flex;
+    align-items: center;
+    margin-block-start: -1px;
+}
+header article .download_container .download_bx .btns a {
+    text-decoration: none;
+    padding: 5px 20px;
+    background: #663DA6;
+    color: #FFF;
+    font-size: 13px;
+    font-weight: 600;
+    margin-inline-end: 10px;
+    border-radius: 5px;
+    transition: .3s linear;
+    display: flex;
+    align-items: center;
+}
+header article .download_container .download_bx .btns a:hover {
+    background: #262B3F;
+}
+header article .download_container .download_bx .btns a i {
+    margin-inline-end: 5px;
+    font-size: 18px;
 }
