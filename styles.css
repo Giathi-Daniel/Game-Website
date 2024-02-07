@@ -557,3 +557,76 @@ header article .game2 .games_bx .card .content p {
     overflow: hidden;
     transition: .5s linear;
 }
+
+
+/* GTA .HTML */
+header article .download_container {
+    inline-size: 100%;
+    block-size: 91%;
+    border: 1px solid #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+header article .download_container .download_bx, .realted_bx {
+    inline-size: 45%;
+    block-size: 100%;
+    border: 1px solid #FFF;
+}
+header article .download_container .download_bx {
+    inline-size: 55%;
+    padding: 0px 20px;
+}
+header article .download_container .download_bx .img_video {
+    position: relative;
+    inline-size: 100%;
+    block-size: 50% ;
+    border: 1px solid #FFF;
+    border-radius: 20px;
+    margin-block-start: 20px;
+    transition: 1s linear infinite;
+}
+header article .download_container .download_bx .img_video h6 {
+    inline-size: 100%;
+    block-size: 100%;
+    border-radius: 20px;
+    background: url("images/pubg.jpeg") no-repeat center center/cover;
+    transition: 1s linear;
+}
+header article .download_container .download_bx .img_video video {
+    position: absolute;
+    inset-block-start: 0%;
+    inset-inline-start: 0%;
+    inline-size: 100%;
+    block-size: 100%;
+    border-radius: 20px;
+}
+header article .download_container .download_bx h4 {
+    margin-block-start: 30px;
+    color: var(--secondary-color);
+    font-size: 16px;
+    font-weight: 500;
+}
+header article .download_container .download_bx ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-block-start: 20px;
+}
+header article .download_container .download_bx ul li {
+    inline-size: 50%;
+    color: var(--color-4);
+    font-size: 13px;
+    font-weight: 400;
+    padding: 5px 0px;
+    letter-spacing: .3px;
+}
+header article .download_container .download_bx ul li:nth-child(2n) {
+    padding-inline-start: 20px;
+}
+header article .download_container .download_bx ul li i {
+    padding-inline-end: 5px;
+}
