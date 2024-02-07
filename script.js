@@ -71,22 +71,23 @@ setInterval(wifi_change, 100);
 wifi_change();
 
 
-// GAME DAOWNLOAD SCRIPT
 let img_change = document.getElementById('img_change');
 
 const change_img_data = () => {
     setTimeout(() => {
         img_change.style.background = "url('images/pubg.jpeg') no-repeat center center/cover";
-    }, 1000);
+    }, 0); // Start immediately
     setTimeout(() => {
         img_change.style.background = "url('images/pubg1.jpeg') no-repeat center center/cover";
-    }, 3000);
+    }, 4000); // 4 seconds later
     setTimeout(() => {
         img_change.style.background = "url('images/pubg2.jpeg') no-repeat center center/cover";
-    }, 6000);
+    }, 8000); // 8 seconds later
 }
-setInterval(change_img_data, 9000); //still have to change but it doesn't change anything
-change_img_data();
+
+setInterval(change_img_data, 12000); // 12 seconds interval (to accommodate all image changes)
+change_img_data(); // Call the function initially
+
 
 
 // playing game
@@ -114,59 +115,20 @@ video.addEventListener('ended', () => {
     play.innerHTML = `<i class="bi bi-play-fill"></i> Play`;
 });
 
-const JoinData = [
-    {
-        name: "Blackshark",
-        game: "Grand Theft Auto V",
-        img: "images/user1.jpg",
-        price: "$800"
-    },
-    {
-        name: "Rachal Sindarera",
-        game: "Amazing Spider Man",
-        img: "images/user5.jpg",
-        price: "$332"
-    },
-    {
-        name: "Angel Angelina",
-        game: "Grand Theft Auto V",
-        img: "images/user4.jpg",
-        price: "$332"
-    },
-    {
-        name: "Steve Jobs",
-        game: "Sniper Ghost",
-        img: "images/user3.jpg",
-        price: "$832"
-    },
-    {
-        name: "Halima",
-        game: "Call Of Duty",
-        img: "images/user2.jpg",
-        price: "$232"
-    },
-    {
-        name: "Don MacDornalds",
-        game: "Ghost Recon Frontline",
-        img: "images/user6.jpg",
-        price: "$102"
-    },
-]
-
 let index = 0;
-
 let join_new = document.getElementsByClassName("join_new")[0];
 
 function update() {
     setInterval(() => {
+        // Clear the content of join_new before adding new elements
+        join_new.innerHTML = "";
+
+        // Access the correct index and avoid going out of bounds
+        const dataIndex = index % JoinData.length;
+        const {name, game, img, price} = JoinData[dataIndex];
+        
         let card = document.createElement('div');
         card.classList.add('card');
-        if (index == JoinData.length) {
-            index = 0;
-        } else {
-            index++;
-        }
-        const {name, game, img, price} = JoinData[index-1];
         card.innerHTML = `<img src="${img}" alt="">
         <div class="content">
             <div class="price">
@@ -176,9 +138,13 @@ function update() {
             </div>
             <p>${name}</p>
         </div>`;
+        
+        // Append the newly created card
         join_new.appendChild(card);
-        join_new.scrollTop += 100;
-    }, 1000);
+
+        // Increment the index for the next iteration
+        index++;
+    }, 3000); // Adjust the interval as per your requirement
 };
 
 document.addEventListener('DOMContentLoaded', () => {
