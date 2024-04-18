@@ -6,4 +6,4 @@
   - Have implemented wifi settings
   - It can also show when you're charging your device by notifying you with a specified tone
 
-![Overview of the website](,Screenshot.png)
+![Overview of the website](Screenshot.png)
