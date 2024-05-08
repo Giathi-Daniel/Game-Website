@@ -1,0 +1,53 @@
+body {
+    margin: 2rem 50%;
+}
+
+
+
+.circle {
+    inline-size: 180px;
+    block-size: 180px;
+    background: conic-gradient(from 0deg at 50% 50%, #6f7bf7 0%, #6f7bf7 0%, #101012 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    box-shadow: 4px 4px 16px #000000bf, -4px -4px 16px #ffffff1a;
+    animation: spin 1s infinite linear;
+}
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.count {
+    content: "";
+    inline-size: 174px;
+    block-size: 174px;
+    background: #1d1e22;
+    position: absolute;
+    inset-block-start: 3px;
+    inset-inline-start: 3px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    box-shadow: 4px 4px 16px #000000bf inset, -4px -4px 16px #ffffff1a inset;
+    animation: soin 1s infinite linear reverse;
+}
+
+.percent,
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    color: #fff;
+}
